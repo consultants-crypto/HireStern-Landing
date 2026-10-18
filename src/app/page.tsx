@@ -1,4 +1,5 @@
 import type { CSSProperties } from "react";
+import Image from "next/image";
 import {
   BrainCircuit,
   Briefcase,
@@ -400,8 +401,8 @@ function Nav() {
   return (
     <header className="sticky top-0 z-50 border-b border-black/5 bg-white/80 backdrop-blur-xl backdrop-saturate-[1.8]">
       <nav className="container-page flex h-11 items-center justify-between">
-        <a href="#" className="text-[19px] font-semibold tracking-[-0.02em]">
-          HireStern
+        <a href="#" aria-label="HireStern home">
+          <Image src="/hirestern-logo.png" alt="HireStern" width={904} height={214} priority className="h-6 w-auto" />
         </a>
         <div className="flex items-center gap-7 text-[12px] text-ink/80">
           <a href="#how" className="hidden hover:text-ink sm:inline">How it works</a>
@@ -449,8 +450,8 @@ function Footer() {
     <footer className="border-t border-line bg-mist py-10">
       <div className="container-page flex flex-col gap-6 text-[12px] text-muted sm:flex-row sm:items-center sm:justify-between">
         <div>
-          <p className="text-[15px] font-semibold text-ink">HireStern</p>
-          <p className="mt-1">Screened candidates in 72 hours.</p>
+          <Image src="/hirestern-logo.png" alt="HireStern" width={904} height={214} className="h-6 w-auto" />
+          <p className="mt-2">Screened candidates in 72 hours.</p>
         </div>
         <div className="flex flex-wrap gap-x-6 gap-y-2">
           <a href="#how" className="hover:text-ink">How it works</a>
