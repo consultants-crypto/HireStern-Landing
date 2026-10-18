@@ -400,16 +400,16 @@ export default function Home() {
 function Nav() {
   return (
     <header className="sticky top-0 z-50 border-b border-black/5 bg-white/80 backdrop-blur-xl backdrop-saturate-[1.8]">
-      <nav className="container-page flex h-11 items-center justify-between">
+      <nav className="container-page flex h-16 items-center justify-between">
         <a href="#" aria-label="HireStern home">
-          <Image src="/hirestern-logo.png" alt="HireStern" width={904} height={214} priority className="h-6 w-auto" />
+          <Image src="/hirestern-logo.png" alt="HireStern" width={904} height={214} priority className="h-8 w-auto" />
         </a>
-        <div className="flex items-center gap-7 text-[12px] text-ink/80">
+        <div className="flex items-center gap-8 text-[14px] text-ink/80">
           <a href="#how" className="hidden hover:text-ink sm:inline">How it works</a>
           <a href="#roles" className="hidden hover:text-ink sm:inline">Roles</a>
           <a href="#pricing" className="hidden hover:text-ink sm:inline">Pricing</a>
           <a href="#faq" className="hidden hover:text-ink sm:inline">FAQ</a>
-          <a href="#contact" className="btn btn-primary !px-3 !py-1 !text-[12px]">
+          <a href="#contact" className="btn btn-primary !px-4 !py-2 !text-[14px]">
             Hire with us
           </a>
         </div>
