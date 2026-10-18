@@ -80,7 +80,7 @@ function Chip({
   return (
     <div className={`hero-in absolute z-10 hidden lg:block ${className}`} style={d(delay)}>
       <div
-        className="float type-small flex items-center gap-2 rounded-full bg-white px-4 py-2.5 font-medium shadow-[0_8px_30px_rgba(0,0,0,0.08)]"
+        className="float type-small flex items-center gap-2 whitespace-nowrap rounded-full bg-white px-4 py-2.5 font-medium shadow-[0_8px_30px_rgba(0,0,0,0.08)]"
         style={d(delay)}
       >
         {icon}
@@ -174,7 +174,7 @@ export function CandidateCard() {
             <p className="text-[17px] font-semibold">Aarav K.</p>
             <p className="type-small text-subtle">Senior Backend Engineer · 6 yrs</p>
           </div>
-          <span className="type-small ml-auto rounded-full bg-accent/10 px-3 py-1 text-accent">Strong fit</span>
+          <span className="type-small ml-auto shrink-0 whitespace-nowrap rounded-full bg-accent/10 px-3 py-1 text-accent">Strong fit</span>
         </div>
 
         <p className="mt-6 text-[12px] font-semibold uppercase tracking-[0.06em] text-subtle">Why they fit</p>
